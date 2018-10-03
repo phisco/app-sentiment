@@ -1,0 +1,4 @@
+/home/phisco/github/k8s-mastery/sa-webapp/src/main/java/com/sa/web/SentimentAnalysisWebApp.java
+/home/phisco/github/k8s-mastery/sa-webapp/src/main/java/com/sa/web/SentimentController.java
+/home/phisco/github/k8s-mastery/sa-webapp/src/main/java/com/sa/web/dto/SentenceDto.java
+/home/phisco/github/k8s-mastery/sa-webapp/src/main/java/com/sa/web/dto/SentimentDto.java
