@@ -1,0 +1,25 @@
+version: "2"
+services:
+  frontend:
+    image: "phisco/frontend"
+    build: ./frontend
+    ports:
+     - "80:80"
+    depends_on:
+      - "webapp"
+
+  webapp:
+    image: "phisco/webapp"
+    build: ./webapp
+    environment:
+      - SA_LOGIC_API_URL=http://logic:5000
+    ports:
+     - "8080:8080"
+    depends_on:
+      - "logic"
+
+  logic:
+    image: "phisco/logic"
+    build: ./logic
+    ports:
+     - "5000:5000"

@@ -1,0 +1,1 @@
+- dal vostro computer eseguite dalla cartella `docker_devops` `sed 's/localhost:8080/<minikube ip>:<porta della webapp da minikube>/g' ./frontend/build/main.331ff316.js` (se non avete sed installato utilizzate il vostro editor preferito per sostituire nel file `frontend/build/main.331ff316.js` l'unica occorrenza di localhost:8080 con `<ip di minikube>:30100`)
