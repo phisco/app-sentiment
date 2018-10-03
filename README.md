@@ -25,9 +25,12 @@
 - L'applicazione in python sarà raggiungibile dagli altri container solo specificando l'ip preciso del containerr, ma possiamo testarla dalla nostra macchina con `curl --header "Content-Type: application/json" --request POST --data '{"sentence":"ciao"}' http://localhost:5000/analyse/sentiment`
 
 ## docker-compose.yaml
-Scrivete un `docker-compose.yaml` per testare in locale la vostra applicazione, potete usare le immagini buildate e taggate precedentemente o buildatele di nuovo.
-Attenzione alla variabile d'ambiente nella webapp (docker-compose ci permette di usare il dns)
+- Scrivete un `docker-compose.yaml` per testare in locale la vostra applicazione, potete usare le immagini buildate e taggate precedentemente o buildatele di nuovo.
+- Attenzione alla variabile d'ambiente nella webapp (docker-compose ci permette di usare il dns)
+- Esponete le porte di frontend e webapp
 
 ## Kubernetes
 - pushate le 3 immagini precedentemente create su docker-hub (ricordatevi di controllare che i tag abbiano la struttura corretta)
-- 
+- create le risorse necessarie per deployare la vostra applicazione su kubernetes
+- ricordate che webapp e frontend devono essere accessibili dall'esterno come services (NodePort con porte specifiche o random)
+- controllate che funzioni tutto con `minikube service <nome service frontend>`
