@@ -14,12 +14,10 @@ services:
     environment:
       - SA_LOGIC_API_URL=http://logic:5000
     ports:
-     - "8080:8080"
+     - "32000:8080"
     depends_on:
       - "logic"
 
   logic:
     image: "phisco/logic"
     build: ./logic
-    ports:
-     - "5000:5000"
