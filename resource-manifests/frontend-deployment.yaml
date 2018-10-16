@@ -20,7 +20,6 @@ spec:
     spec:
       containers:
         - image: phisco/frontend
-          imagePullPolicy: IfNotPresent
           name: frontend
           ports:
             - containerPort: 80

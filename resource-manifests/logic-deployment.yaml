@@ -20,7 +20,6 @@ spec:
     spec:
       containers:
         - image: phisco/logic
-          imagePullPolicy: IfNotPresent
           name: logic
           ports:
             - containerPort: 5000
