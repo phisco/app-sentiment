@@ -1,5 +1,5 @@
 # Sentiment Analysis application 
-
+![](https://cdn-images-1.medium.com/max/1600/1*oH9lP-4GWT8eQHh_X5obsw.gif)
 ## Dockerfile
 - frontend (`./frontend/Dockerfile`):
   - utilizzare l'immagine di base `nginx:1.15`
@@ -34,3 +34,5 @@
 - ricordate che webapp e frontend devono essere accessibili dall'esterno come services (NodePort, ma ricordatevi di specificare la porta per webapp a 32000)
   - modificate correttamente `/etc/hosts` o `c:\Windows\System32\Drivers\etc\hosts`
 - controllate che funzioni tutto dal browser
+
+Credits to [Rinor Maloku](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882) for the code and the original article.
