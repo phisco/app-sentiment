@@ -35,4 +35,6 @@
   - modificate correttamente `/etc/hosts` o `c:\Windows\System32\Drivers\etc\hosts`
 - controllate che funzioni tutto dal browser
 
+## Credits
+
 Credits to [Rinor Maloku](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882) for the code and the original article.
