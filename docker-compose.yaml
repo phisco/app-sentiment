@@ -1,12 +1,15 @@
+---
 version: "2"
 services:
   frontend:
     image: "phisco/frontend"
     build: ./frontend
     ports:
-     - "80:80"
+      - "80:80"
     depends_on:
       - "webapp"
+    volumes: 
+      - ./frontend/build:/usr/share/nginx/html:ro
 
   webapp:
     image: "phisco/webapp"
@@ -14,7 +17,7 @@ services:
     environment:
       - SA_LOGIC_API_URL=http://logic:5000
     ports:
-     - "32000:8080"
+      - "32000:8080"
     depends_on:
       - "logic"
 
