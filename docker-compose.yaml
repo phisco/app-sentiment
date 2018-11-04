@@ -8,8 +8,6 @@ services:
       - "80:80"
     depends_on:
       - "webapp"
-    volumes: 
-      - ./frontend/build:/usr/share/nginx/html:ro
 
   webapp:
     image: "phisco/webapp"
